@@ -1,77 +1,156 @@
 <html>
 	<head>
-		<title>Hello World</title>
-		<!--Bootstrap CSS-->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- Bulma (http://bulma.io/) -->
+	<link rel="stylesheet" type="text/css" href="./content/CSS/Bulma/bulma.css">
+	 	<!-- Glides (http://glide.jedrzejchalubek.com/) -->
+	<link rel="stylesheet" type="text/css" href="./content/CSS/Glide/glide.core.css">
+    <link rel="stylesheet" type="text/css" href="./content/CSS/Glide/glide.theme.css">
+    	<!-- Estilos Propios -->
+    <link rel="stylesheet" type="text/css" href="./content/CSS/site.css">
 	</head>
 	<body>
 		<header>
-			<nav class="navbar navbar-inverse" role="navigation">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">San Leon</a>
-				</div>
-			
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse navbar-ex1-collapse">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-					</ul>
-					<form class="navbar-form navbar-left" role="search">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Search">
-						</div>
-						<button type="submit" class="btn btn-default">Submit</button>
-					</form>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Link</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li><a href="#">Separated link</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
+			<!-- Navbar -->
+			<nav class="nav has-shadow">
+				<div class="container">
+				  <div class="nav-left">
+				    <a class="nav-item is-brand" href="#">
+				      <img src="/images/bulma-type.png" alt="Bulma logo">
+				    </a>
+				  </div>
+				  	<!-- Iconos para Cel -->
+				  <span class="nav-toggle">
+				    <span></span>
+				    <span></span>
+				    <span></span>
+				  </span>
+
+				  <div class="nav-right nav-menu">
+				    <a class="nav-item" href="#">
+				      Home
+				    </a>
+				    <a class="nav-item" href="#">
+				      Documentation
+				    </a>
+				    <a class="nav-item" href="#">
+				      Blog
+				    </a>
+				  </div>
+			  </div>
 			</nav>
+
+			<!-- Fin Navbar -->
 		</header>
-		<section>			
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<div class="jumbotron">
-					<div class="container">
-						<h1>Hello, world!</h1>
-						<p>Contents ...</p>
-						<p>
-							<a class="btn btn-primary btn-lg">Learn more</a>
-						</p>
-					</div>
-				</div>				
-				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere risus eget iaculis dignissim. Donec mi ex, auctor quis posuere ut, dictum nec sapien. Aliquam ac massa non turpis rutrum aliquet id non ligula. Sed bibendum posuere nisi, vitae auctor nulla tempor non. Duis vel urna venenatis</p>
+		<br/>
+			<!-- Tiles -->
+		<section>
+			<div class="container">
+				<div class="tile is-ancestor">
+				  <div class="tile is-vertical is-9">
+				    <div class="tile">
+				      <div class="tile is-parent is-vertical">
+				        <article class="tile is-child notification">
+				          <p class="title">Vertical...</p>
+				          <p class="subtitle">Top tile</p>
+				        </article>
+				        <!-- <article class="tile is-child notification">
+				          <p class="title">...tiles</p>
+				          <p class="subtitle">Bottom tile</p>
+				        </article> -->
+				      </div>
+				      <div class="tile is-parent">
+				        <article class="tile is-child notification">
+				          <p class="title">Middle tile</p>
+				          <p class="subtitle">With an image</p>
+				          <figure class="image is-4by3">
+				            <img src="http://placehold.it/640x480">
+				          </figure>
+				        </article>
+
+				      </div>
+				    </div>
+				    <div class="tile is-parent">
+				      <article class="tile is-child notification">
+				        <p class="title">Wide tile</p>
+				        <p class="subtitle">Aligned with the right tile</p>
+				        <div class="content">
+				          <!-- Content -->
+				        </div>
+				      </article>
+				    </div>
+				     <div class="tile is-parent">
+				      <article class="tile is-child notification">
+				       <!--  <p class="title">Wide tile</p> -->
+				        <!-- <p class="subtitle">Aligned with the right tile</p> -->
+				        <div class="content">
+				        </div>
+				      </article>
+				    </div>
+				  </div>
+				  <div class="tile is-parent">
+				    <article class="tile is-child notification">
+				      <div class="content">
+				        <p class="title">Ultimos tweets</p>
+				       <!--  <p class="subtitle">With even more content</p> -->
+				        <div class="content">
+				          <!-- Content -->
+				           <div class="content">
+				        	<div id="twitter-wjs"></div>
+				        	<!--<script type="text/javascript" src="//widgets.twimg.com/j/2/widget.js"></script>-->
+							<a class="twitter-timeline" 
+							data-height="300" 
+							data-theme="dark" 
+							data-chrome="noheader nofooter transparent"
+							data-tweet-limit="2"
+							href="https://twitter.com/SanLeonWeb"
+							>Tweets by SanLeonWeb</a> 
+							<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				        </div>
+				        </div>
+				      </div>
+				    </article>
+				  </div>
 				</div>
-				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere risus eget iaculis dignissim. Donec mi ex, auctor quis posuere ut, dictum nec sapien. Aliquam ac massa non turpis rutrum aliquet id non ligula. Sed bibendum posuere nisi, vitae auctor nulla tempor non. Duis vel urna venenatis</p>
-				</div>
-				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere risus eget iaculis dignissim. Donec mi ex, auctor quis posuere ut, dictum nec sapien. Aliquam ac massa non turpis rutrum aliquet id non ligula. Sed bibendum posuere nisi, vitae auctor nulla tempor non. Duis vel urna venenatis</p>
-				</div>
-			</div>
+			<div>
 		</section>
-		
-		
-		<!--JQuery-->
-		<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
-		<!--Bootstrap JS-->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- Fin Tiles -->
+		<!-- Footer -->
+		<footer class="footer">
+		  <div class="container">
+		    <div class="content has-text-centered">
+		      <p>
+		        <strong>San Leon</strong> by <a href="http://jgthms.com">Braian Cariaga</a>.
+		      </p>
+		      <p>
+		        <a class="icon" href="https://github.com/bcariaga">
+		          <i class="fa fa-github"></i>
+		        </a>
+		      </p>
+		    </div>
+		  </div>
+		</footer>
+		<!-- Fin Footer -->
+			<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="content/scripts/glide.js"></script>
+		<script src="content/scripts/principal.js"></script>|
+		<script>
+		// puto FB
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '350794601927831',
+		      xfbml      : true,
+		      version    : 'v2.8'
+		    });
+		  };
+
+		  (function(d, s, id){
+		     var js, fjs = d.getElementsByTagName(s)[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement(s); js.id = id;
+		     js.src = "//connect.facebook.net/en_US/sdk.js";
+		     fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
 	</body>
-<html>
+</html>
