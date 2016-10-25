@@ -1,0 +1,13 @@
+cantidad="4";
+registro1="pepito";
+registro2="juanito";
+registro3="federico";
+registro4="anselmo";
+
+
+var miObjeto = new Object();
+miObjeto.nombre = "Pedro";
+miObjeto.edad = 12;
+miObjeto.mascota = "Gato";
+ 
+var myString = JSON.stringify(miObjeto);

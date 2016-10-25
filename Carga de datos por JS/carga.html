@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guardado de texto JS</title>
+	<script src="./datos.txt"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script>
+	function cargarDatos(){
+			// var cantidad1= '';
+			// cantidad1.innerText=cantidad;
+
+			for (var i = 1; i <= cantidad; i++) {
+				document.getElementById('campo' + i).innerHTML=registro + i;
+			}
+		}
+		// function cargarDatos(){
+		// 	document.getElementById("campo1").innerText=registro1;
+		// 	document.getElementById("campo2").innerText=registro2;
+		// 	document.getElementById("campo3").innerText=registro3;
+		// 	document.getElementById("campo4").innerText=registro4;
+		// }
+	</script>
+</body>
+</head>
+<body>
+	<table class="table">
+		<tr>
+			<td colspan="3" id="campo1">
+			</td>
+		</tr>
+		<tr>
+			<td id="campo2">
+			</td>
+		</tr>
+		<tr>
+			<td id="campo3">
+			</td>
+		</tr>
+		<tr>
+			<td id="campo4">
+			</td>
+		</tr>
+	</table>
+	<button id="cargar">Cargar datos</button>
+	<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+	<script >
+		$('#cargar').on('click', function(){
+			cargarDatos();
+
+
+		});
+
+	</script>
+</html>
