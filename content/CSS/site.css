@@ -1,9 +1,9 @@
-body {
+/*body {
 	background: no-repeat;
 	background-size: cover;
 	background-image: url('../img/abstract-1489000_1280.jpg');
 
-}
+}*/
 section{
   background-color: transparent!important; /*Bulma lo presetea en blanco ¬¬*/
 }
